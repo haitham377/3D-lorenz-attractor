@@ -17,4 +17,4 @@ It draws a trail of points in space with a smoothly orbiting camera for a nice v
 From your terminal or PowerShell, run:
 
 ```bash
-g++ try.cpp -I"path/to/raylib/include" -L"path/to/raylib/lib" -lraylib -lopengl32 -lgdi32 -lwinmm -o app.exe
+g++ main.cpp -I"path/to/raylib/include" -L"path/to/raylib/lib" -lraylib -lopengl32 -lgdi32 -lwinmm -o app.exe
