@@ -1,10 +1,3 @@
-# 3D Lorenz Attractor Visualization
-
-This project visualizes the Lorenz attractor in 3D using **C++** and **Raylib**.  
-It draws a trail of points in space with a smoothly orbiting camera for a nice visual effect.
-
----
-
 ## Requirements
 
 - [Raylib](https://www.raylib.com/) installed
