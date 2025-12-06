@@ -6,10 +6,20 @@ const float rho   = 28.0f;
 const float beta  = 8.0f/3.0f;
 const float dt    = 0.01f;
 
+// Monitor Resolution
+std::pair<int,int>sizeofscreen(){
+    int monitor = GetCurrentMonitor();
+    int width   = GetMonitorWidth(monitor);
+    int height  = GetMonitorHeight(monitor);
+ return {width,height};
+}
 
 
 int main() {
-    InitWindow(800, 600, "3D Lorenz Attractor");
+    std::pair<int,int>screen_size = sizeofscreen();
+    // make Window size same as user screen Roslution
+    InitWindow(screen_size.first, screen_size.second, "3D Lorenz Attractor");
+    
     SetTargetFPS(60);
     
     float x = 0.1f;
